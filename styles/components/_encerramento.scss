@@ -1,0 +1,39 @@
+@import '../abstract/variaveis';
+
+#encerramento{
+    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem 2rem 2rem;
+    border-top: 2px solid $cor-terciaria;
+    .box-img{
+        width: 300px;
+        img{
+            width: 100%;
+            border-radius: 65px;
+            border: 2px solid $cor-terciaria;
+        }
+    }
+    .box-txt{
+        margin-left: 4rem;
+        width: 500px;
+        h3{
+            font-weight: 500;
+            font-size: calc($tamanho-texto/1.5);
+            opacity: 0.9;
+            color: $cor-terciaria;
+        }
+        h4{
+            font-size: calc($tamanho-texto/2.5);
+            opacity: 0.7;
+            color: $cor-quaternaria;
+        }
+        p{
+            font-size: calc($tamanho-texto/3.5);
+            opacity: 0.5;
+            color: $cor-quaternaria;
+        }
+    }
+}
